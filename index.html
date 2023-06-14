@@ -12,15 +12,19 @@
         <div class="row-cols-12">
             <h1>Appointment Page</h1>
             <form onsubmit="saveAppointment(); return false;">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <div class="container">
+                    <div class="row-12">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
                 <br><br>
                 <div class="container">
-                    <div class="row-cols-5">
+                    <div class="row-cols-6">
                         <button type="button" class="btn btn-primary" id="get">Get</button>
                         <button type="button" class="btn btn-secondary" id="post">Post</button>
                         <button type="button" class="btn btn-success">Update</button>
@@ -29,6 +33,7 @@
                     </div>
                 </div>
             </form>
+            <div id="print"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
